@@ -1,0 +1,174 @@
+/* Styles used in the annual report. We can't change maf-app.css because it will
+   affect the main site. */
+
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+  font-size: 2em;
+  font-family: arial,helvetica;
+  color: black;
+  margin:0;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.intro p{
+  color: #fff;
+}
+
+/* Customize navigation dots */
+#fp-nav{
+  background-color: rgba(255,255,255,0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+ }
+
+ .fp-tooltip {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,0.5);
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 1);
+  padding: 5px 0 5px 5px;
+  margin-right: 1px;
+  margin-top: -3px;
+ }
+
+/* Fixed header and footer.             
+* --------------------------------------- */
+#header, #footer{
+  position:fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  background: #333;
+  z-index:9;
+  text-align:center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
+}
+
+#header{
+  top:0px;
+}
+#footer{
+  bottom:0px;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  /*margin-bottom:.5%;
+  margin-top:1%;*/
+  //padding-top:5%;
+}
+
+//TODO: Work out what this is for.
+.docshow{
+height:550px;
+width:500px;
+}
+
+h1 {
+-webkit-font-smoothing: antialiased;
+box-sizing: border-box;
+color: rgb(22, 22, 22);
+font-family: 'Open Sans', sans-serif;
+font-size: 60px;
+font-weight: 300;
+line-height: 72px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+padding-bottom: 0px;
+padding-top: 0px;
+text-align: center;
+text-transform: uppercase;
+vertical-align: baseline;
+}
+
+.logo-image {
+position: fixed;
+top: 15px;
+left: 15px;
+}
+
+/* Have a top aligned slide option
+*/
+
+.fp-tableCell.top {
+  vertical-align: top;
+}
+
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+  left: 50px;
+}
+.controlArrow.next{
+  right: 50px;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+  color: #fff;
+}
+
+.left-slide3 {
+width: 400px;
+float: left;
+}
+
+.para-container {
+margin: 0 auto;
+background-color: rgba(255,255,255,0.7);
+padding: 25px;
+max-width: 650px;
+}
+
+.left-align-para-container.para-container {
+margin: auto auto auto auto;
+}
+
+.para-container.letter-container {
+max-width: 1000px;
+}
+
+.letter{
+text-align:left;
+font-size: 1em;
+line-height: 1.4em;
+padding-bottom: 1.4em;
+}
+
+p.verse {
+font-family: 'Merriweather', serif;
+width: 350px;
+font-size: 0.85em;
+margin-top: 1.6em;
+line-height: 1.8em;
+color: #919089;
+font-weight: 400;
+text-align: left;
+}
+
+/* Section Styles */
+/* Todo  add resizing rules for different screen sizes */
+.cover-page {
+background-image: url("http://missionassetfund.org/wp-content/uploads/2014/04/LGBTCenterHomepage_SliderFINAL.png");
+padding: 6% 0 0 0;
+}
+
+.who-we-are{
+background-image:url("http://missionassetfund.org/wp-content/uploads/2014/04/HelenDaughterHomepage_Slider1.png"); 
+}
