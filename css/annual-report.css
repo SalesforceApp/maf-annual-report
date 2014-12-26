@@ -139,10 +139,10 @@ h1 {
 
 /* Slide background images*/
 #slide1 .content {
-  background-image: url(../images/image27.jpg);
+  background-image: url(../images/stories/family-of-chefs.jpg);
 }
 #slide2 .content {
-  background-image: url(../images/image16.jpg)
+  background-image: url(../images/stories/sunshine-to-the-community.jpg)
 }
 
 /* Overwriting styles for control arrows for slides
