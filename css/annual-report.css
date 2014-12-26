@@ -13,8 +13,8 @@
 h1 {
   color: black;
   font-family: arial,helvetica;
-  font-size: 2em;
-  margin:0;
+  font-size: 32px;
+  margin: 0;
 }
 
 h2 {
@@ -50,8 +50,6 @@ h2 {
   background: #333;
   color: #f2f2f2;
   display: block;
-  height: 50px;
-  padding: 20px 0 0 0;
   position: fixed;
   text-align:center;
   width: 100%;
@@ -59,21 +57,33 @@ h2 {
 }
 
 #header {
+  height: 50px;
+  padding: 20px 0 0 0;
   top: 0px;
 }
+
 #footer {
   bottom: 0px;
+  font-size: 16px;
+  height: 67px;
+  padding: 8px 0;
 }
 
 .footer > .donate-btn {
   display: inline-block;
-  text-align:left;
+  text-align: right;
   width: 45%;
+}
+
+.footer > .donate-btn > .button {
+  color: #fff;
+  border-color: #fff;
+  margin: 0 0 0 auto;
 }
 
 .footer > .social-media-share-container {
   display: inline-block;
-  text-align:right;
+  text-align: left;
   width: 45%;
 }
 
@@ -139,10 +149,10 @@ h1 {
 
 /* Slide background images*/
 #slide1 .content {
-  background-image: url(../images/image27.jpg);
+  background-image: url(../images/stories/family-of-chefs.jpg);
 }
 #slide2 .content {
-  background-image: url(../images/image16.jpg)
+  background-image: url(../images/stories/sunshine-to-the-community.jpg)
 }
 
 /* Overwriting styles for control arrows for slides
@@ -182,21 +192,10 @@ h1 {
 }
 
 .letter {
-  font-size: 1em;
-  line-height: 1.4em;
-  padding-bottom: 1.4em;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 22px;
   text-align:left;
-}
-
-p.verse {
-  color: #919089;
-  font-family: 'Merriweather', serif;
-  font-size: 0.85em;
-  font-weight: 400;
-  line-height: 1.8em;
-  margin-top: 1.6em;
-  text-align: left;
-  width: 350px;
 }
 
 /* Section Styles */
