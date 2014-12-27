@@ -1,0 +1,214 @@
+/* Styles used in the annual report. We can't change maf-app.css because it will
+   affect the main site. */
+
+/* Utility classes
+* --------------------------------------- */
+.half-table-cell {
+  display: table-cell;
+  width: 50%;
+}
+
+/* Style for our header texts
+* --------------------------------------- */
+h1 {
+  color: black;
+  font-family: arial,helvetica;
+  font-size: 32px;
+  margin: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.intro p {
+  color: #fff;
+}
+
+/* Customize navigation dots */
+#fp-nav{
+  background-color: rgba(255,255,255,0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+ }
+
+ .fp-tooltip {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,0.5);
+  margin-right: 1px;
+  margin-top: -3px;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 1);
+  padding: 5px 0 5px 5px;
+ }
+
+/* Fixed header and footer.             
+* --------------------------------------- */
+#header, #footer {
+  background: #333;
+  color: #f2f2f2;
+  display: block;
+  position: fixed;
+  text-align:center;
+  width: 100%;
+  z-index:9;  
+}
+
+#header {
+  height: 50px;
+  padding: 20px 0 0 0;
+  top: 0px;
+}
+
+#footer {
+  bottom: 0px;
+  font-size: 16px;
+  height: 67px;
+  padding: 8px 0;
+}
+
+.footer > .donate-btn {
+  display: inline-block;
+  text-align: right;
+  width: 45%;
+}
+
+.footer > .donate-btn > .button {
+  color: #fff;
+  border-color: #fff;
+  margin: 0 0 0 auto;
+}
+
+.footer > .social-media-share-container {
+  display: inline-block;
+  text-align: left;
+  width: 45%;
+}
+
+
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+//TODO: Work out what this is for.
+.docshow {
+  height: 550px;
+  width: 500px;
+}
+
+h1 {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: rgb(22, 22, 22);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
+
+.logo-image {
+  left: 15px;
+  position: fixed;
+  top: 15px;
+}
+
+/* Slideshow section
+* --------------------------------------- */
+
+/* Have a top aligned slide option */
+.fp-tableCell.top {
+  vertical-align: top;
+}
+
+.slide .content {
+  display: table;
+  height: inherit;
+  text-align: right;
+}
+
+.slide .text-content {
+  background: rgba(255,255,255,0.5);
+  padding: 15px;
+}
+
+/* Slide background images*/
+#slide1 .content {
+  background-image: url(../images/stories/family-of-chefs.jpg);
+}
+#slide2 .content {
+  background-image: url(../images/stories/sunshine-to-the-community.jpg)
+}
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+  left: 50px;
+}
+.controlArrow.next {
+  right: 50px;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+  color: #fff;
+}
+
+.left-slide3 {
+  float: left;
+  width: 400px;
+}
+
+.para-container {
+  background-color: rgba(255,255,255,0.7);
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 25px;
+}
+
+.left-align-para-container.para-container {
+  margin: auto auto auto auto;
+}
+
+.para-container.letter-container {
+  max-width: 1000px;
+}
+
+.letter {
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 22px;
+  text-align:left;
+}
+
+/* Section Styles */
+/* Todo  add resizing rules for different screen sizes */
+.cover-page {
+  background-image: url("http://missionassetfund.org/wp-content/uploads/2014/04/LGBTCenterHomepage_SliderFINAL.png");
+  padding: 6% 0 0 0;
+}
+
+.cover-page h1 {
+  margin-top: 115px;
+}
+
+.who-we-are {
+  background-image:url("http://missionassetfund.org/wp-content/uploads/2014/04/HelenDaughterHomepage_Slider1.png"); 
+}

@@ -7,183 +7,10 @@
     <meta name="description" content="fullPage full-screen navigation and sections control menu." />
     <meta name="keywords"  content="maf, maf annual report" />
     <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
     <link rel='stylesheet' id='maf-style-css'  href='./css/maf-app.css' type='text/css' media='all' />
-    <style>
-
-    /* Style for our header texts
-    * --------------------------------------- */
-    h1{
-      font-size: 2em;
-      font-family: arial,helvetica;
-      color: black;
-      margin:0;
-    }
-
-    h2 {
-      text-transform: uppercase;
-    }
-
-    .intro p{
-      color: #fff;
-    }
-
-    /* Customize navigation dots */
-    #fp-nav{
-      background-color: rgba(255,255,255,0.5);
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      border-radius: 4px;
-     }
-
-     .fp-tooltip {
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      border-radius: 2px;
-      background-color: rgba(255,255,255,0.5);
-      text-shadow: -1px 1px 2px rgba(0, 0, 0, 1);
-      padding: 5px 0 5px 5px;
-      margin-right: 1px;
-      margin-top: -3px;
-     }
-
-      /* Fixed header and footer.
-  * --------------------------------------- */
-    #header, #footer{
-      position:fixed;
-      height: 50px;
-      display:block;
-      width: 100%;
-      background: #333;
-      z-index:9;
-      text-align:center;
-      color: #f2f2f2;
-      padding: 20px 0 0 0;
-    }
-
-    #header{
-      top:0px;
-    }
-    #footer{
-      bottom:0px;
-    }
-
-    /* Centered texts in each section
-    * --------------------------------------- */
-    .section{
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      text-align: center;
-      /*margin-bottom:.5%;
-      margin-top:1%;*/
-      //padding-top:5%;
-    }
-  
-  //TODO: Work out what this is for.
-  .docshow{
-    height:550px;
-    width:500px;
-  }
-
-  h1 {
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    color: rgb(22, 22, 22);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 60px;
-    font-weight: 300;
-    line-height: 72px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    text-align: center;
-    text-transform: uppercase;
-    vertical-align: baseline;
-   }
-
-   .logo-image {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-   }
-
-   /* Have a top aligned slide option
-   */
-
-   .fp-tableCell.top {
-      vertical-align: top;
-   }
-
-
-    /* Overwriting styles for control arrows for slides
-    * --------------------------------------- */
-    .controlArrow.prev {
-      left: 50px;
-    }
-    .controlArrow.next{
-      right: 50px;
-    }
-
-
-    /* Bottom menu
-    * --------------------------------------- */
-    #infoMenu li a {
-      color: #fff;
-    }
-  
-  .left-slide3 {
-  width: 400px;
-  float: left;
-  }
-
-  .para-container {
-    margin: 0 auto;
-    background-color: rgba(255,255,255,0.7);
-    padding: 25px;
-    max-width: 650px;
-  }
-
-  .left-align-para-container.para-container {
-    margin: auto auto auto auto;
-  }
-
-  .para-container.letter-container {
-    max-width: 1000px;
-  }
-
-  .letter{
-    text-align:left;
-    font-size: 1em;
-    line-height: 1.4em;
-    padding-bottom: 1.4em;
-  }
-
-  p.verse {
-    font-family: 'Merriweather', serif;
-    width: 350px;
-    font-size: 0.85em;
-    margin-top: 1.6em;
-    line-height: 1.8em;
-    color: #919089;
-    font-weight: 400;
-    text-align: left;
-  }
-  
-  /* Section Styles */
-  /* Todo  add resizing rules for different screen sizes */
-  .cover-page {
-    background-image: url("http://missionassetfund.org/wp-content/uploads/2014/04/LGBTCenterHomepage_SliderFINAL.png");
-    padding: 6% 0 0 0;
-  }
-
-  .who-we-are{
-    background-image:url("http://missionassetfund.org/wp-content/uploads/2014/04/HelenDaughterHomepage_Slider1.png"); 
-  }
-    </style>
-
+    <link rel='stylesheet' href='./css/annual-report.css' type='text/css' media='all' />
 
     <!--[if IE]>
       <script type="text/javascript">
@@ -202,11 +29,15 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('#fullpage').fullpage({
-          anchors: ['firstPage', 'secondPage', '3rdPage'],
+          anchors: ['annual-report-2014', 'who-we-are', 'letter', 'highlights',
+              'people', 'our-impact', 'financials', 'looking-ahead-to-2015',
+              'funders'],
           sectionsColor: ['', '', '#242024'],
           navigation: true,
           navigationPosition: 'right',
-          navigationTooltips: ['Introduction', 'Who we are', 'Letter from CEO'],
+          navigationTooltips: ['2014 Annual Report', 'Who We Are',
+              'Letter From CEO', 'Highlights', 'People', 'Our Impact',
+              'Financials', 'Looking Ahead to 2015', 'Funders'],
           scrollOverflow: true
         });
       });
@@ -214,14 +45,14 @@
   </head>
 <body> 
     <!-- footer  -->
-  <div id="footer" >
-    <div style="width: 45%; display: inline-block; text-align:left;">Donate button here</div>
-    <div style="width: 45%; display: inline-block; text-align:right;">Social media share buttons go here</div>
+  <div id="footer" class="footer">
+    <div class="social-media-share-container">Social media share buttons go here</div>
+    <div class="donate-btn"><a class="button" href="http://lendingcircles.force.com/pmtx/dn8n__SiteDonation?id=a81i0000000PAsD">donate</a></div>
   </div>
   <div id="fullpage">
     <div class="section cover-page active" id="section0">
       <img src="http://missionassetfund.org/wp-content/themes/maf/assets/images/global/logo.png" class="logo-image">
-      <h1 class="site-header module title-text" style="margin-top: 115px;">2014 annual report</h1>
+      <h1 class="site-header module title-text">2014 annual report</h1>
       <h2 class="site-header module title-text">A year of levelling up</h2>
     </div>
     <div class="section who-we-are top" id="section1">
@@ -241,7 +72,7 @@
               From passing groundbreaking legislation with SB 896 and expanding our national network of partners to launching our new Social Loan platform and moving to a new office, 2014 has been a big year for us. Since this is our first annual report, we also want to share with you what we’ve accomplished since MAF began in 2007. We’re excited to show how far we’ve come in scaling Lending Circles to help more individuals and communities reach their various goals and be on a path towards financial stability.
               With so much success to celebrate, we want to say thank you! Because of your support, more hardworking families are leveling up their lives through credit-building. Be on the look out for more exciting developments in the next year! <br><br>
             </p>
-              <img src="images/image32.png" alt="Jose Quinonez, CEO" style="float:middle;">
+              <img src="images/PLACEHOLDER-ceo-jorge-quinonez.png" alt="Jose Quinonez, CEO">
               <p class="letter">
               Jose Quinonez, CEO</p><p class="letter">
               (Jose signature)
@@ -254,9 +85,9 @@
    </div>
     <div class="section">
       <div class="slide" id="slide1">
-        <div style="display:table; background-image: url(images/image27.jpg); height: inherit; text-align: right;">
-          <span style="display: table-cell; width: 50%;"></span>
-          <span style="display: table-cell; width: 50%; background: rgba(255,255,255,0.5); padding: 15px;">
+        <div class="content">
+          <span class="half-table-cell"></span>
+          <span class="half-table-cell text-content">
             <h1>A family of chefs</h1>
             <p>
               Luis and Zenaida are the rockstar couple behind D’Maize Catering, bringing authentic Salvadoran dishes to Bay Area. They used Lending Circles to invest in their business and turn their part-time passion into a full-time job that can support their family.
@@ -265,9 +96,9 @@
         </div>
     </div>
     <div class="slide" id="slide2">
-      <div style="display:table; background-image: url(images/image16.jpg); height: inherit; text-align: right;">
-          <span style="display: table-cell; width: 50%;"></span>
-          <span style="display: table-cell; width: 50%; background: rgba(255,255,255,0.5); padding: 15px;">
+      <div class="content">
+          <span class="half-table-cell"></span>
+          <span class="half-table-cell text-content">
             <h1>BRINGING SUNSHINE TO THE COMMUNITY</h1>
             <p>
               Leonor had years of business experience before coming to the US, but not having credit blocked her from being able to launch her new idea. Now, she’s promoting healthy living and entrepreneurship with her natural health business.
