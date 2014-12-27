@@ -148,11 +148,18 @@ h1 {
 }
 
 /* Slide background images*/
-#slide1 .content {
+.family-of-chefs.content {
   background-image: url(../images/stories/family-of-chefs.jpg);
+  background-size: cover;
 }
-#slide2 .content {
-  background-image: url(../images/stories/sunshine-to-the-community.jpg)
+.sunshine-to-the-community.content {
+  background-image: url(../images/stories/sunshine-to-the-community.jpg);
+  background-size: cover;
+}
+
+.dreams-to-medical-school {
+  background-image: url(../images/stories/dreams-to-medical-school.jpg);
+  background-size: cover;
 }
 
 /* Overwriting styles for control arrows for slides
