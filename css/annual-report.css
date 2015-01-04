@@ -249,7 +249,6 @@ h1 {
 /* Section Styles */
 /* Todo  add resizing rules for different screen sizes */
 .cover-page {
-  background-image: url("http://missionassetfund.org/wp-content/uploads/2014/04/LGBTCenterHomepage_SliderFINAL.png");
   padding: 6% 0 0 0;
 }
 
@@ -258,5 +257,9 @@ h1 {
 }
 
 .who-we-are {
-  background-image:url("http://missionassetfund.org/wp-content/uploads/2014/04/HelenDaughterHomepage_Slider1.png"); 
+  background-image:url(../images/jenniferleahy-business-owner.jpg); 
+}
+
+.thank-you {
+  background-image:url(../images/maf-staff.jpg);
 }
