@@ -8,6 +8,47 @@
   width: 50%;
 }
 
+/* MAF Colors */
+/* rgba for modern browsers, rgb for legacy */
+.maf-blue {
+  background: rgb(89, 211, 255);
+  background: rgba(89, 211, 255, 0.9);
+}
+
+.maf-green {
+  background: rgb(21, 154, 72);
+  background: rgba(21, 154, 72, 0.9);
+}
+
+.maf-purple {
+  background: rgb(119, 38, 153);
+  background: rgba(119, 38, 153, 0.9);
+}
+
+.maf-red {
+  background: rgb(191, 32, 38);
+  background: rgba(191, 32, 38, 0.9);
+}
+
+.maf-yellow {
+  background: rgb(253, 186, 18);
+  background: rgba(253, 186, 18, 0.9);
+}
+
+.maf-orange {
+  background: rgb(244, 119, 33);
+  background: rgba(244, 119, 33, 0.9);
+}
+
+.maf-black {
+  background: rgb(35, 31, 32);
+  background: rgba(35, 31, 32, 0.9);
+}
+
+.maf-grey {
+  background: rgb(66, 84, 106);
+  background: rgba(66, 84, 106, 0.9);
+}
 /* Style for our header texts
 * --------------------------------------- */
 h1 {
@@ -87,7 +128,76 @@ h2 {
   width: 45%;
 }
 
+/* Banners */
+/* Following examples in MAF Style guide */
+.banner {
+  padding: 15px;
+}
 
+.left-banner {
+  bottom: 0;
+  left: 5%;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+.half-top-banner-table-left {
+  display: table;
+  margin-top: 15px;
+  width: 70%;
+  text-align: center;
+}
+
+.wide-highlight {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner H1 {
+  color: white;
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  font-size: 84px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.banner H2 {
+  color: white;
+}
+
+.banner p {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+.banner a {
+  color: white;
+  text-decoration: underline;
+}
+
+.thank-you-banner {
+  bottom: 65px;
+  position: absolute;
+  width: 100%;
+}
+
+.thank-you-banner p {
+  font-size: 18px;
+  line-height: 20px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 600px;
+}
 
 /* Centered texts in each section
 * --------------------------------------- */
@@ -136,10 +246,17 @@ h1 {
   vertical-align: top;
 }
 
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next {
+  border-right-color: #231F20; /* Maf Grey */
+  border-left-color: #231F20; /* Maf Grey */
+}
+
 .slide .content {
   display: table;
   height: inherit;
   text-align: right;
+  width: inherit;
 }
 
 .slide .text-content {
@@ -190,8 +307,22 @@ h1 {
   padding: 25px;
 }
 
+.banner.looking-ahead-content {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.banner.looking-ahead-content p {
+  font-size: 20px;
+  text-align: justify;
+}
+
 .left-align-para-container.para-container {
   margin: auto auto auto auto;
+}
+
+.left-align-text>p{
+  text-align: left;
 }
 
 .para-container.letter-container {
@@ -248,15 +379,11 @@ h1 {
 
 /* Section Styles */
 /* Todo  add resizing rules for different screen sizes */
-.cover-page {
-  background-image: url("http://missionassetfund.org/wp-content/uploads/2014/04/LGBTCenterHomepage_SliderFINAL.png");
-  padding: 6% 0 0 0;
-}
-
-.cover-page h1 {
-  margin-top: 115px;
-}
 
 .who-we-are {
-  background-image:url("http://missionassetfund.org/wp-content/uploads/2014/04/HelenDaughterHomepage_Slider1.png"); 
+  background-image:url(../images/jenniferleahy-business-owner.jpg); 
+}
+
+.thank-you {
+  background-image:url(../images/maf-staff.jpg);
 }
