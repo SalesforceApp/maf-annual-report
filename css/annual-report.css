@@ -180,6 +180,20 @@ h2 {
   text-decoration: underline;
 }
 
+.thank-you-banner {
+  bottom: 65px;
+  position: absolute;
+  width: 100%;
+}
+
+.thank-you-banner p {
+  font-size: 18px;
+  line-height: 20px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 iframe {
   width: 100%;
   height: 600px;
@@ -293,8 +307,22 @@ h1 {
   padding: 25px;
 }
 
+.banner.looking-ahead-content {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.banner.looking-ahead-content p {
+  font-size: 20px;
+  text-align: justify;
+}
+
 .left-align-para-container.para-container {
   margin: auto auto auto auto;
+}
+
+.left-align-text>p{
+  text-align: left;
 }
 
 .para-container.letter-container {
