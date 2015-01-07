@@ -66,6 +66,9 @@ h2 {
   color: #fff;
 }
 
+.center {
+  text-align: center;
+}
 /* Customize navigation dots */
 #fp-nav{
   background-color: rgba(255,255,255,0.5);
@@ -132,12 +135,13 @@ h2 {
 /* Following examples in MAF Style guide */
 .banner {
   padding: 15px;
+  white-space: initial;
 }
 
 .left-banner {
   bottom: 0;
   left: 5%;
-  position: absolute;
+  position: relative;
   top: 0;
   width: 50%;
 }
@@ -168,7 +172,7 @@ h2 {
 }
 
 .banner p {
-  text-align: center;
+  text-align: left;
   color: white;
   font-size: 30px;
   line-height: 35px;
@@ -178,12 +182,6 @@ h2 {
 .banner a {
   color: white;
   text-decoration: underline;
-}
-
-.thank-you-banner {
-  bottom: 65px;
-  position: absolute;
-  width: 100%;
 }
 
 .thank-you-banner p {
@@ -204,7 +202,6 @@ iframe {
 .section {
   background-size: auto 100%;
   background-repeat: no-repeat;
-  text-align: center;
 }
 
 //TODO: Work out what this is for.
@@ -233,9 +230,10 @@ h1 {
 }
 
 .logo-image {
+  text-align: left;
   left: 15px;
-  position: fixed;
   top: 15px;
+  padding: 15px;
 }
 
 /* Slideshow section
@@ -265,6 +263,10 @@ h1 {
 }
 
 /* Slide background images*/
+.horizontal-scroll-section {
+  display: inline-block;
+}
+
 .family-of-chefs.content {
   background-image: url(../images/stories/family-of-chefs.jpg);
   background-size: cover;
@@ -325,15 +327,20 @@ h1 {
   text-align: left;
 }
 
-.para-container.letter-container {
-  max-width: 1000px;
-}
-
 .letter {
+  background: rgb(66, 84, 106);
+  background: rgba(66, 84, 106, 0.7);
+  color: white;
   font-size: 16px;
   line-height: 22px;
-  padding-bottom: 22px;
-  text-align:left;
+  margin: 5%;
+  padding: 22px;
+  text-align: justify;
+  max-width: 600px;
+}
+
+.letter p {
+  margin-bottom: 15px;
 }
 
 /* Highlights */
@@ -386,4 +393,34 @@ h1 {
 
 .thank-you {
   background-image:url(../images/maf-staff.jpg);
+}
+
+.cover-page {
+  background-image:url(../images/app-users.jpg);
+  background-size: cover;
+}
+
+.letter-section {
+  background-image: url(../images/jose-portrait.jpg);
+  background-size: cover;
+}
+
+h2.visionaries,
+h2.innovators,
+h2.supporters,
+h2.current-donors,
+h2.board-members,
+h2.special-thanks {
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+.visionaries,
+.innovators, 
+.supporters, 
+.current-donors, 
+.board-members, 
+.special-thanks {
+  color: white;
+  line-height: 24px;
 }
