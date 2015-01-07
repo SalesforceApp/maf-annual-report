@@ -8,9 +8,9 @@
     <meta name="keywords"  content="maf, maf annual report" />
     <meta name="Resource-type" content="Document" />
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
     <link rel='stylesheet' id='maf-style-css'  href='./css/maf-app.css' type='text/css' media='all' />
     <link rel='stylesheet' href='./css/annual-report.css' type='text/css' media='all' />
+    <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
 
     <!--[if IE]>
       <script type="text/javascript">
@@ -18,84 +18,54 @@
       </script>
     <![endif]-->
 
-    <!-- Temporary Jquery and UI scripts for developing away from internet. -->
-    <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="./js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      resizeDiv();
+    });
 
-    <!-- TODO: Should we host our own versions of our scripts? -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    
-    <script type="text/javascript" src="./js/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+    window.onresize = function(event) {
+     resizeDiv();
+    }
 
-    <!-- TODO: Clarify/remove purpose of examples.js -->
-    <!--<script type="text/javascript" src="examples.js"></script>-->
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#fullpage').fullpage({
-          anchors: ['annual-report-2014', 'who-we-are', 'letter', 'highlights',
-              'people', 'our-impact', 'financials', 'looking-ahead-to-2015',
-              'funders', 'thank-you'],
-          sectionsColor: ['', '', '#242024'],
-          navigation: true,
-          navigationPosition: 'right',
-          navigationTooltips: ['2014 Annual Report', 'Who We Are',
-              'Letter From CEO', 'Highlights', 'People', 'Our Impact',
-              'Financials', 'Looking Ahead to 2015', 'Funders', 'Thank You'],
-          scrollOverflow: true,
-          slidesNavigation: true,
-          responsive: true,
-          paddingBottom: '65px'
-        });
-      });
+    function resizeDiv() {
+      vpw = $(window).width();
+      vph = $(window).height();
+      $('.section, .left-banner, .horizontal-scroll-section').css({'min-height': vph});
+      $('.section').css({'width': vpw});
+      $('.horizontal-scroll-section').css({'width': 0.8 * vpw, 'min-height': 0.7 * vph});
+    }
     </script>
   </head>
 <body> 
- <!-- footer  -->   
- <div id="footer" class="footer">   
-   <div class="social-media-share-container">Social media share buttons go here</div>   
-   <div class="donate-btn"><a class="button" href="http://lendingcircles.force.com/pmtx/dn8n__SiteDonation?id=a81i0000000PAsD">donate</a></div>   
- </div>
-  <div id="fullpage">
-    <div class="section cover-page active" id="section0">
+  <div class="section cover-page active center" id="section0">
       <img src="http://missionassetfund.org/wp-content/themes/maf/assets/images/global/logo.png" class="logo-image">
-      <div class="banner maf-purple">
+      <div class="banner maf-purple center">
         <h1>2014 annual report</h1>
         <h2>A year of levelling up</h2>
       </div>
-    </div>
-    <div class="section who-we-are top" id="section1">
+  </div>
+  <div class="section who-we-are top" id="section1">
       <div class="banner left-banner maf-blue">
         <h1>WHO WE ARE</h1>
         <p> MAF is a nonprofit organization working to create a fair financial marketplace for hardworking families.</p><p>
         We are helping financially excluded communities becoming visible, active, and successful participants in the U.S. financial mainstream.
         </p><p>Our values are: Respect people for who they are, meet them where they are and build on what they have.</p>
      </div>
+  </div>
+  <!-- Start letter section -->
+  <div class="section letter-section" id="section3" data-anchor="slide3">
+    <div class="banner"><h1>Letter from Jose</h1></div>
+    <div class="letter">
+      <p>The challenge of having zero or poor credit is one that holds 54 million people in the US back from reaching their full potential. This year, at Mission Asset Fund, we’ve taken a number of steps to open more doors, create new opportunities and build a brighter, better future for our members. You could say we’re “leveling up.”</p>
+      <p>From passing groundbreaking legislation with SB 896 and expanding our national network of partners to launching our new Social Loan platform and moving to a new office, 2014 has been a big year for us. Since this is our first annual report, we also want to share with you what we’ve accomplished since MAF began in 2007. We’re excited to show how far we’ve come in scaling Lending Circles to help more individuals and communities reach their various goals and be on a path towards financial stability. With so much success to celebrate, we want to say thank you! Because of your support, more hardworking families are leveling up their lives through credit-building. Be on the look out for more exciting developments in the next year! </p>
+      <p>Jose Quinonez, CEO</p>
     </div>
-    
-    <div class="section slide3 table left-slide3" id="section3" data-anchor="slide3">
-          <div class="header" style="position: relative;">
-            <h1 style="bottom: 0;position: absolute;">Letter from Jose</h1>
-            <img width="100%" src="images/jose-ceo-portrait.jpg" alt="Jose Quinonez, CEO">
-          </div>  
-      <div class="para-container letter-container">
-            <p class="letter">
-              The challenge of having zero or poor credit is one that holds 54 million people in the US back from reaching their full potential. This year, at Mission Asset Fund, we’ve taken a number of steps to open more doors, create new opportunities and build a brighter, better future for our members. You could say we’re “leveling up.”
-            </p><p class="letter">
-              From passing groundbreaking legislation with SB 896 and expanding our national network of partners to launching our new Social Loan platform and moving to a new office, 2014 has been a big year for us. Since this is our first annual report, we also want to share with you what we’ve accomplished since MAF began in 2007. We’re excited to show how far we’ve come in scaling Lending Circles to help more individuals and communities reach their various goals and be on a path towards financial stability.
-              With so much success to celebrate, we want to say thank you! Because of your support, more hardworking families are leveling up their lives through credit-building. Be on the look out for more exciting developments in the next year! <br><br>
-            </p>
-              <img src="images/jose-ceo-portrait.jpg" alt="Jose Quinonez, CEO">
-              <p class="letter">
-              Jose Quinonez, CEO</p><p class="letter">
-              (Jose signature)
-              </p>
-       </div>
-   </div>
-   <div class="section">
+  </div>
+  <!-- end letter section -->
+ <div class="center" style="margin-bottom: 40px;">
+   <div class="banner maf-orange">
       <h1>2014 Highlights</h1>
+    </div>
       <div class="highlights-row">
         <div class="highlight">
           <img src="images/2014-highlights/expanding-partnerships.png">
@@ -203,68 +173,25 @@
           </div>
         </div>
       </div>  
-    </div>  
-   <!-- Start people/stories slides section -->
-    <div class="section">
-      <div class="slide">
-        <div class="content family-of-chefs">
-          <div class="banner half-top-banner-table-left maf-orange">
-            <h1>A family of chefs</h1>
-            <p class="wide-highlight">
-              Luis and Zenaida are the rockstar couple behind D’Maize Catering, bringing authentic Salvadoran dishes to Bay Area.</p>
-            <p class="wide-highlight"> They used Lending Circles to invest in their business and turn their part-time passion into a full-time job that can support their family. <a href="http://missionassetfund.org/luis-zenaida-family-chefs/" target="_blank">Find out more.</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="content sunshine-to-the-community">
-          <div class="banner maf-green">
-            <h1>Bringing Sunshine to the Community</h1>
-            <p>
-              Leonor had years of business experience before coming to the US, but not having credit blocked her from being able to launch her new idea. Now, she’s promoting healthy living and entrepreneurship with her natural health business. <a href="http://missionassetfund.org/leonor-brings-sunshine-community/" target="_blank">Find out more.</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="content">
-          <span class="half-table-cell dreams-to-medical-school"></span>
-          <span class="half-table-cell banner maf-blue">
-            <h1>From Dreams to Medical School</h1>
-            <p>
-              New is a passionate public health advocate and the first undocumented student to enter UCSF Medical School. He used Lending Circles to build his credit and pay for his medical school applications fees. 
-            </p>
-            <p>
-              <a href="http://missionassetfund.org/new-latthivongskorn-dreams-medical-school/" target="_blank">Find out more.</a>
-            </p>
-          </span>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="content video-shot-at-success maf-yellow">
-          <div class="banner">
-            <h1>Video: A shot at success</h1>
-          </div>
-          <div>
-            <iframe src="https://player.vimeo.com/video/85204219?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
     </div>
-   <!-- End people/stories slides section -->
-   <div class="section">
-      <h1>Our impact</h1>
-      Infographic?
-   </div>
-  <div class="section">
-      <h1>Financials</h1>
-      Text and chart
-   </div>
-  <div class="section maf-grey">
+    <!-- end highlights section -->
+    <!-- success stories section -->
+    <div class="banner maf-purple"><h1>Our success stories</h1></div>
+    <div style="overflow-x: scroll; white-space: nowrap; width: auto;">
+      <div class="horizontal-scroll-section family-of-chefs content">
+          <div class="half-top-banner-table-left banner maf-grey"><h2>A family of chefs</h2></div>
+      </div><div class="horizontal-scroll-section sunshine-to-the-community content">
+          <div class="half-top-banner-table-left banner maf-grey"><h2>Bringing sunshine to the community</h2></div>
+      </div><div class="horizontal-scroll-section dreams-to-medical-school content">
+        <div class="half-top-banner-table-left banner maf-grey"><h2>From dreams to medical school</h2></div>
+      </div>
+    </div><div class="section maf-blue">
+    <!-- end success stories -->
+    
+      <div class="banner"><h1>Our impact</h1></div>
+    </div><div class="section maf-green">
+    <div class="banner"><h1>Our financials</h1></div>
+  </div><!-- lookign ahead --><div class="section maf-grey">
     <div class="banner left-align-text looking-ahead-content">
       <h1>Looking ahead to 2015</h1>
       <h2>Expanding Reach</h2>
@@ -277,8 +204,8 @@
       <p>Millions of immigrant families now have the amazing opportunity to gain three-year protective status through Deferred Action, lifting the fog of fear and uncertainty in their lives. Deferred Action will unleash their economic potential with opportunities for better paying jobs and engage light of day. In 2015, we will offer new programs and services to make sure that hardworking low-income families have a chance at a better future and ability to access services to meet their financial needs.</p>
     </div>
    </div>
-   <div class="section">
-      <h1>Funders</h1>
+   <div class="section center maf-black">
+      <div class="banner"><h1>Funders</h1></div>
       <h2 class="visionaries">Visionaries</h2>
       <ul class="donors visionaries">
         <li>CFSI
@@ -366,14 +293,15 @@
         <li>Shweta Kohli
       </ul>
    </div>
-   <div class="section thank-you">
-      <div class="banner thank-you-banner maf-green">
-        <h1>Thank You</h1>
-        <p>We wouldn't be hear without the generous support of our community.</p>
-        <p>Seeing the passion and excitement for our programs across the country has demonstrated that we are heading in the right direction. We look forward to bringing Lending Circles to more communities nationwide.</p>
-        <p>The MAFistas.</p>
-      </div>
-   </div>
+      <div class="section thank-you"> 
+     </div>
+     <div class="banner thank-you-banner maf-green">
+          <h1>Thank You</h1>
+          <p>We wouldn't be hear without the generous support of our community.</p>
+          <p>Seeing the passion and excitement for our programs across the country has demonstrated that we are heading in the right direction. We look forward to bringing Lending Circles to more communities nationwide.</p>
+          <p>The MAFistas.</p>
+        </div>
  </div>
-</body> 
+</div>
+</body>
 </html>
