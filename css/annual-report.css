@@ -339,8 +339,16 @@ h1 {
   max-width: 600px;
 }
 
-.letter p {
-  margin-bottom: 15px;
+.letter p,
+.people-story p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.people-story p{
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
 }
 
 /* Highlights */
