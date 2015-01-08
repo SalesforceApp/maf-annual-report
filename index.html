@@ -7,7 +7,7 @@
     <meta name="description" content="fullPage full-screen navigation and sections control menu." />
     <meta name="keywords"  content="maf, maf annual report" />
     <meta name="Resource-type" content="Document" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' id='maf-style-css'  href='./css/maf-app.css' type='text/css' media='all' />
     <link rel='stylesheet' href='./css/annual-report.css' type='text/css' media='all' />
     <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
@@ -28,8 +28,9 @@
     }
 
     function resizeDiv() {
-      vpw = $(window).width();
+      vpw = $(document).width();
       vph = $(window).height();
+      
       $('.section, .left-banner, .horizontal-scroll-section').css({'min-height': vph});
       $('.section').css({'width': vpw});
       $('.horizontal-scroll-section').css({'width': 0.8 * vpw, 'min-height': 0.7 * vph});
