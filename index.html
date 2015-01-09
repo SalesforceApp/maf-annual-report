@@ -7,7 +7,7 @@
     <meta name="description" content="fullPage full-screen navigation and sections control menu." />
     <meta name="keywords"  content="maf, maf annual report" />
     <meta name="Resource-type" content="Document" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' id='maf-style-css'  href='./css/maf-app.css' type='text/css' media='all' />
     <link rel='stylesheet' href='./css/annual-report.css' type='text/css' media='all' />
     <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
@@ -30,7 +30,8 @@
     function resizeDiv() {
       vpw = $(window).width();
       vph = $(window).height();
-      $('.section, .left-banner, .horizontal-scroll-section').css({'min-height': vph});
+      
+      $('.section, .horizontal-scroll-section').css({'min-height': vph});
       $('.section').css({'width': vpw});
       $('.horizontal-scroll-section').css({'width': 0.8 * vpw, 'min-height': 0.7 * vph});
     }
@@ -44,7 +45,8 @@
         <h2>A year of levelling up</h2>
       </div>
   </div>
-  <div class="section who-we-are top" id="section1">
+  <div class="section who-we-are top maf-blue" id="section1">
+      <div class="who-we-are-mobile"></div>
       <div class="banner left-banner maf-blue">
         <h1>WHO WE ARE</h1>
         <p> MAF is a nonprofit organization working to create a fair financial marketplace for hardworking families.</p><p>
@@ -62,9 +64,9 @@
     </div>
   </div>
   <!-- end letter section -->
- <div class="center" style="margin-bottom: 40px;">
+ <div class="center section" style="margin-bottom: 40px;">
    <div class="banner maf-orange">
-      <h1>2014 Highlights</h1>
+      <h1 class="long-title">2014 Highlights</h1>
     </div>
       <div class="highlights-row">
         <div class="highlight">
@@ -146,30 +148,31 @@
           <img src="images/2014-highlights/new-staff.jpg">
           <div class="text">
             <h2>Adding New Staff</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-               enim ad minim veniam, quis nostrud exercitation ullamco 
-               laboris.</p>
+            <p>We’ve added a few more awesome people to the team so we can better
+             meet the needs of our growing members. Their diverse skill sets will
+              be sure to add even more dynamism to work we do. Welcome Aparna,
+               Carmen, Isis, Jennifer, Karla, Tori and Ximena to the family!</p>
           </div>
         </div>
         <div class="highlight">
           <img src="images/2014-highlights/earning-awards.jpg">
           <div class="text">
             <h2>Earning Awards</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-               enim ad minim veniam, quis nostrud exercitation ullamco 
-               laboris.</p>
+            <p>We’re honored to have been recognized by three different organizations
+             this year for our work. As a finalist in the Google Impact Challenge and 
+             recipients of awards from the San Francisco Foundation and the SF LGBT
+              Center, we have a lot to celebrate and be thankful for. </p>
           </div>
         </div>
         <div class="highlight">
           <img src="images/2014-highlights/making-the-media.jpg">
           <div class="text">
             <h2>Making The Media</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-               enim ad minim veniam, quis nostrud exercitation ullamco 
-               laboris.</p>
+            <p>From the New York Times to the Guardian to Univision, we got some great
+             media buzz this year (70 mentions!) on our programs and incredible members.
+              Every story got us tons of calls, emails and walk-ins and our staff was so
+               excited to see the overwhelming support and enthusiasm to join Lending
+                Circles and start building their credit. </p>
           </div>
         </div>
       </div>  
@@ -179,21 +182,41 @@
     <div class="banner maf-purple"><h1>Our success stories</h1></div>
     <div style="overflow-x: scroll; white-space: nowrap; width: auto;">
       <div class="horizontal-scroll-section family-of-chefs content">
-          <div class="half-top-banner-table-left banner maf-grey"><h2>A family of chefs</h2></div>
+          <div class="half-top-banner-table-left banner maf-grey">
+            <h2>A family of chefs</h2>
+            <div class="people-story">
+            <p>Luis and Zenaida are the rockstar couple behind D’Maize Catering, bringing authentic Salvadoran dishes to Bay Area. They used Lending Circles to invest in their business and turn their part-time passion into a full-time job that can support their family.</p>
+            <p><a href="http://missionassetfund.org/luis-zenaida-family-chefs/" target="_blank">Tell me more</a></p>
+           </div>
+          </div>
       </div><div class="horizontal-scroll-section sunshine-to-the-community content">
-          <div class="half-top-banner-table-left banner maf-grey"><h2>Bringing sunshine to the community</h2></div>
+          <div class="half-top-banner-table-left banner maf-grey">
+          <h2>Bringing sunshine to the community</h2>
+          <div class="people-story">
+            <p>Leonor had years of business experience before coming to the US, but not having credit blocked her from being able to launch her new idea. Now, she’s promoting healthy living and entrepreneurship with her natural health business.</p>
+            <p><a href="http://missionassetfund.org/leonor-brings-sunshine-community/" target="_blank">Tell me more</a></p>
+           </div>
+          </div>
       </div><div class="horizontal-scroll-section dreams-to-medical-school content">
-        <div class="half-top-banner-table-left banner maf-grey"><h2>From dreams to medical school</h2></div>
+        <div class="half-top-banner-table-left banner maf-grey"><h2>From dreams to medical school</h2>
+        <div class="people-story">
+            <p>New is a passionate public health advocate and the first undocumented student to enter UCSF Medical School. He used Lending Circles to build his credit and pay for his medical school applications fees.</p>
+            <p><a href="http://missionassetfund.org/new-latthivongskorn-dreams-medical-school/" target="_blank">Tell me more</a></p>
+           </div>
+        </div>
       </div>
     </div><div class="section maf-blue">
     <!-- end success stories -->
     
       <div class="banner"><h1>Our impact</h1></div>
     </div><div class="section maf-green">
-    <div class="banner"><h1>Our financials</h1></div>
+    <div class="banner center"><h1 class="long-title">Our financials</h1>
+        <img src="images/financialgraph1.jpg" style="width: 100%; max-width:1000px">
+        <img src="images/2014expensesgraph.jpg" style="width: 100%; max-width:1000px">
+    </div>
   </div><!-- lookign ahead --><div class="section maf-grey">
     <div class="banner left-align-text looking-ahead-content">
-      <h1>Looking ahead to 2015</h1>
+      <h1 class="long-title">Looking ahead to 2015</h1>
       <h2>Expanding Reach</h2>
       <p>We’re excited to bring the power of credit building to new communities across the U.S. In 2015, we’ll deepen and expand our reach throughout the SF Bay Area and across the country by partnering with community based nonprofits looking to improve outcomes for their clients and strengthen their financial empowerment programs with credit-building.</p>
        
@@ -204,8 +227,8 @@
       <p>Millions of immigrant families now have the amazing opportunity to gain three-year protective status through Deferred Action, lifting the fog of fear and uncertainty in their lives. Deferred Action will unleash their economic potential with opportunities for better paying jobs and engage light of day. In 2015, we will offer new programs and services to make sure that hardworking low-income families have a chance at a better future and ability to access services to meet their financial needs.</p>
     </div>
    </div>
-   <div class="section center maf-black">
-      <div class="banner"><h1>Funders</h1></div>
+   <div class="section center maf-black" style="padding-bottom: 20px;">
+      <div class="banner"><h1 class="long-title">Funders</h1></div>
       <h2 class="visionaries">Visionaries</h2>
       <ul class="donors visionaries">
         <li>CFSI
@@ -250,20 +273,29 @@
         <li>Joseph Antolin
         <li>John Blatz
         <li>Christine Comella
-        <li>Elsy Diaz Vasquez
         <li>Claire Engers
         <li>Theresa J. Feeley
+        <li>Brigette Gosselink
+        <li>Elise Haas
         <li>Mary Hassler
+        <li>Robin Karson
         <li>Steven Kaufman
         <li>Brian Komar
         <li>Jonathan Kummerfeld
+        <li>Daniel Lau
+        <li>Susan Lutz
+        <li>John Maser
         <li>Aditi Mohapatra
         <li>Jeff Osteen
         <li>Beverly Patterson
+        <li>Jennifer Phillips
         <li>Robert Pinkard
         <li>Ira Rheingold
+        <li>Connie Robinson
         <li>Lisa Sardegna
         <li>John Templeton
+        <li>Elsy Diaz Vasquez
+        <li>John Voss
         <li>Sachiya Yoshii
         <li>Shawna Wolverton
       </ul>

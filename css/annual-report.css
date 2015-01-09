@@ -1,13 +1,6 @@
 /* Styles used in the annual report. We can't change maf-app.css because it will
    affect the main site. */
 
-/* Utility classes
-* --------------------------------------- */
-.half-table-cell {
-  display: table-cell;
-  width: 50%;
-}
-
 /* MAF Colors */
 /* rgba for modern browsers, rgb for legacy */
 .maf-blue {
@@ -69,6 +62,7 @@ h2 {
 .center {
   text-align: center;
 }
+
 /* Customize navigation dots */
 #fp-nav{
   background-color: rgba(255,255,255,0.5);
@@ -88,43 +82,6 @@ h2 {
   padding: 5px 0 5px 5px;
  }
 
-/* Fixed header and footer.             
-* --------------------------------------- */
-#header, #footer {
-  background: #333;
-  color: #f2f2f2;
-  display: block;
-  position: fixed;
-  text-align:center;
-  width: 100%;
-  z-index:9;  
-}
-
-#header {
-  height: 50px;
-  padding: 20px 0 0 0;
-  top: 0px;
-}
-
-#footer {
-  bottom: 0px;
-  font-size: 16px;
-  height: 67px;
-  padding: 8px 0;
-}
-
-.footer > .donate-btn {
-  display: inline-block;
-  text-align: right;
-  width: 45%;
-}
-
-.footer > .donate-btn > .button {
-  color: #fff;
-  border-color: #fff;
-  margin: 0 0 0 auto;
-}
-
 .footer > .social-media-share-container {
   display: inline-block;
   text-align: left;
@@ -134,6 +91,7 @@ h2 {
 /* Banners */
 /* Following examples in MAF Style guide */
 .banner {
+  overflow: hidden;
   padding: 15px;
   white-space: initial;
 }
@@ -144,6 +102,13 @@ h2 {
   position: relative;
   top: 0;
   width: 50%;
+}
+
+@media only screen and (max-width: 799px) and (min-width: 300px) {
+  .left-banner {
+    position: initial;
+    width: inherit;
+  }
 }
 
 .half-top-banner-table-left {
@@ -179,6 +144,14 @@ h2 {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 799px) and (min-width: 300px) {
+  .banner p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
+
 .banner a {
   color: white;
   text-decoration: underline;
@@ -202,12 +175,6 @@ iframe {
 .section {
   background-size: auto 100%;
   background-repeat: no-repeat;
-}
-
-//TODO: Work out what this is for.
-.docshow {
-  height: 550px;
-  width: 500px;
 }
 
 h1 {
@@ -234,72 +201,6 @@ h1 {
   left: 15px;
   top: 15px;
   padding: 15px;
-}
-
-/* Slideshow section
-* --------------------------------------- */
-
-/* Have a top aligned slide option */
-.fp-tableCell.top {
-  vertical-align: top;
-}
-
-.fp-controlArrow.fp-prev,
-.fp-controlArrow.fp-next {
-  border-right-color: #231F20; /* Maf Grey */
-  border-left-color: #231F20; /* Maf Grey */
-}
-
-.slide .content {
-  display: table;
-  height: inherit;
-  text-align: right;
-  width: inherit;
-}
-
-.slide .text-content {
-  background: rgba(255,255,255,0.5);
-  padding: 15px;
-}
-
-/* Slide background images*/
-.horizontal-scroll-section {
-  display: inline-block;
-}
-
-.family-of-chefs.content {
-  background-image: url(../images/stories/family-of-chefs.jpg);
-  background-size: cover;
-}
-.sunshine-to-the-community.content {
-  background-image: url(../images/stories/sunshine-to-the-community.jpg);
-  background-size: cover;
-}
-
-.dreams-to-medical-school {
-  background-image: url(../images/stories/dreams-to-medical-school.jpg);
-  background-size: cover;
-}
-
-/* Overwriting styles for control arrows for slides
-* --------------------------------------- */
-.controlArrow.prev {
-  left: 50px;
-}
-.controlArrow.next {
-  right: 50px;
-}
-
-
-/* Bottom menu
-* --------------------------------------- */
-#infoMenu li a {
-  color: #fff;
-}
-
-.left-slide3 {
-  float: left;
-  width: 400px;
 }
 
 .para-container {
@@ -339,8 +240,16 @@ h1 {
   max-width: 600px;
 }
 
-.letter p {
-  margin-bottom: 15px;
+.letter p,
+.people-story p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.people-story p{
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
 }
 
 /* Highlights */
@@ -382,26 +291,84 @@ h1 {
     margin-right: 0;
     margin-bottom: 35px;
   }
+
+  .banner H1.long-title {
+    font-size: 60px;
+  }
 }
 
 /* Section Styles */
 /* Todo  add resizing rules for different screen sizes */
 
+.cover-page {
+  background-image: url(../images/app-users.jpg);
+  background-size: cover;
+}
+
+/* Phone */
+@media only screen and (max-width: 799px) and (min-width: 300px) {
+  .cover-page {
+    background-image: initial;
+    background-color: white;
+  }
+}
+
 .who-we-are {
   background-image:url(../images/jenniferleahy-business-owner.jpg); 
+}
+
+@media only screen and (max-width: 799px) and (min-width: 300px) {
+  .who-we-are {
+    background-image: initial;
+    background-color: white;
+  }
+
+  .who-we-are-mobile {
+    background-image:url(../images/mobile/jenniferleahy-business-owner.jpg); 
+    background-size: cover;
+    width: inherit;
+    height: 150px;
+  }
 }
 
 .thank-you {
   background-image:url(../images/maf-staff.jpg);
 }
 
-.cover-page {
-  background-image:url(../images/app-users.jpg);
+.letter-section {
+  background-image: url(../images/jose-portrait.jpg);
   background-size: cover;
 }
 
-.letter-section {
-  background-image: url(../images/jose-portrait.jpg);
+@media only screen and (max-width: 799px) and (min-width: 300px) {
+  .letter-section {
+    background-color: rgb(66, 84, 106);
+    background-image: url(../images/mobile/jose-portrait.png);
+    background-size: contain;
+    padding-top: 300px;
+  }
+
+  .letter {
+    background-color: rgb(35, 31, 32);
+  }
+}
+
+/* Slide background images*/
+.horizontal-scroll-section {
+  display: inline-block;
+}
+
+.family-of-chefs.content {
+  background-image: url(../images/stories/family-of-chefs.jpg);
+  background-size: cover;
+}
+.sunshine-to-the-community.content {
+  background-image: url(../images/stories/sunshine-to-the-community.jpg);
+  background-size: cover;
+}
+
+.dreams-to-medical-school {
+  background-image: url(../images/stories/dreams-to-medical-school.jpg);
   background-size: cover;
 }
 
