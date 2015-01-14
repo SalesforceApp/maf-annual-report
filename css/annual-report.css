@@ -423,12 +423,20 @@ h2.special-thanks {
    -webkit-column-rule-width:  1px;
 }
 
+.financials-caption {
+  display: inline-block;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 10px;
+}
+
 .financials-caption H2 {
   color: black;
 }
+
 .financials-caption p {
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
   line-height: initial;
 }
