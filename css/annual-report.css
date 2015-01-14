@@ -406,3 +406,29 @@ h2.special-thanks {
    -webkit-column-rule-style: solid ;
    -webkit-column-rule-width:  1px;
 }
+
+
+.two-col {
+  -webkit-columns: 2 400px;
+  -moz-columns: 2 400px;
+  columns: 2 400px;
+
+   -moz-column-gap: 20px;
+   -webkit-column-gap : 20px;
+   -moz-column-rule-color:  #ccc;
+   -moz-column-rule-style:  solid;
+   -moz-column-rule-width:  1px;
+   -webkit-column-rule-color:  #ccc;
+   -webkit-column-rule-style: solid ;
+   -webkit-column-rule-width:  1px;
+}
+
+.financials-caption H2 {
+  color: black;
+}
+.financials-caption p {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: initial;
+}
