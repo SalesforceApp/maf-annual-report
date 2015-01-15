@@ -173,7 +173,7 @@ iframe {
 /* Centered texts in each section
 * --------------------------------------- */
 .section {
-  background-size: auto 100%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -464,3 +464,4 @@ h2.special-thanks {
   position: absolute;
   left: 10px;
 }
+
