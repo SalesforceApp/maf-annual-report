@@ -21,6 +21,8 @@
     <script>
     $(document).ready(function(){
       resizeDiv();
+      $('#arrow-left').click(function(){/*Do stuff*/});
+      $('#arrow-right').click(function(){/*Do stuff*/});
     });
 
     window.onresize = function(event) {
@@ -31,9 +33,9 @@
       vpw = $(window).width();
       vph = $(window).height();
       
-      $('.section, .horizontal-scroll-section').css({'min-height': vph});
+      $('.section').css({'min-height': vph});
       $('.section').css({'width': vpw});
-      $('.horizontal-scroll-section').css({'width': 0.8 * vpw, 'min-height': 0.7 * vph});
+      //$('.horizontal-scroll-section').css({'width': 0.8 * vpw, 'min-height': 0.7 * vph});
     }
     </script>
   </head>
@@ -179,17 +181,21 @@
     </div>
     <!-- end highlights section -->
     <!-- success stories section -->
-    <div class="banner maf-purple"><h1>Our success stories</h1></div>
-    <div style="overflow-x: scroll; white-space: nowrap; width: auto;">
-      <div class="horizontal-scroll-section family-of-chefs content">
-          <div class="half-top-banner-table-left banner maf-grey">
+    <div class="banner maf-grey">
+      <div class="arrow-left" id="arrow-left"></div>
+      <div class="arrow-right" id="arrow-right"></div>
+      <h1>Our success stories</h1>
+    </div>
+    <div class="section" style="overflow-x: scroll; white-space: nowrap; width: auto;">
+      <div class="section horizontal-scroll-section family-of-chefs content">
+          <div class="half-top-banner-table-left banner maf-grey" id="first-slide">
             <h2>A family of chefs</h2>
             <div class="people-story">
             <p>Luis and Zenaida are the rockstar couple behind D’Maize Catering, bringing authentic Salvadoran dishes to Bay Area. They used Lending Circles to invest in their business and turn their part-time passion into a full-time job that can support their family.</p>
             <p><a href="http://missionassetfund.org/luis-zenaida-family-chefs/" target="_blank">Tell me more</a></p>
            </div>
           </div>
-      </div><div class="horizontal-scroll-section sunshine-to-the-community content">
+      </div><div class="section horizontal-scroll-section sunshine-to-the-community content">
           <div class="half-top-banner-table-left banner maf-grey">
           <h2>Bringing sunshine to the community</h2>
           <div class="people-story">
@@ -197,7 +203,7 @@
             <p><a href="http://missionassetfund.org/leonor-brings-sunshine-community/" target="_blank">Tell me more</a></p>
            </div>
           </div>
-      </div><div class="horizontal-scroll-section dreams-to-medical-school content">
+      </div><div class="section horizontal-scroll-section dreams-to-medical-school content">
         <div class="half-top-banner-table-left banner maf-grey"><h2>From dreams to medical school</h2>
         <div class="people-story">
             <p>New is a passionate public health advocate and the first undocumented student to enter UCSF Medical School. He used Lending Circles to build his credit and pay for his medical school applications fees.</p>
