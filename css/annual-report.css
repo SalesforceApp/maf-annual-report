@@ -254,8 +254,17 @@ h1 {
 
 /* Highlights */
 .highlights-row {
-  margin-top: 70px;
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display:         flex;
+  -webkit-flex-wrap: wrap;
+     -moz-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+     -moz-justify-content: center;
+          justify-content: center;
   position: relative;
+  margin-top: 24px;
   width: 100%;
 }
 
@@ -263,10 +272,15 @@ h1 {
   background: #fff;
   border-radius: 2px;
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 24px;
   overflow: hidden;
   vertical-align: top;
   width: 28%;
+}
+
+/* Keep each row centered. */
+.highlight:last-child {
+  margin-right: 0;
 }
 
 .highlight > .text {
