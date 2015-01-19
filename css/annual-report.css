@@ -204,7 +204,7 @@ h1 {
 }
 
 .donate-btn {
-  margin-top: 32px;
+  margin: 32px 0 16px 0;
 }
 
 .donate-btn > a {
@@ -486,5 +486,15 @@ h2.special-thanks {
   border-right: 40px solid white; 
   position: absolute;
   left: 10px;
+}
+
+.address-container > address {
+  float: none;
+  margin: 12px 0 0 0;
+}
+
+.address-container > .logo {
+  float: none;
+  margin: 0 auto;
 }
 
