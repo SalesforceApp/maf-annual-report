@@ -203,6 +203,15 @@ h1 {
   padding: 15px;
 }
 
+.donate-btn {
+  margin-top: 32px;
+}
+
+.donate-btn > a {
+  border-color: #fff;
+  text-decoration: none;
+}
+
 .para-container {
   background-color: rgba(255,255,255,0.7);
   margin: 0 auto;
