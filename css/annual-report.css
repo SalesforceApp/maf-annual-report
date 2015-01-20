@@ -229,6 +229,11 @@ h1 {
   text-align: justify;
 }
 
+.banner.looking-ahead-content > .description {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .left-align-para-container.para-container {
   margin: auto auto auto auto;
 }
