@@ -21,6 +21,8 @@
     <script>
     $(document).ready(function(){
       resizeDiv();
+      $('#arrow-left').click(function(){/*Do stuff*/});
+      $('#arrow-right').click(function(){/*Do stuff*/});
     });
 
     window.onresize = function(event) {
@@ -31,9 +33,9 @@
       vpw = $(window).width();
       vph = $(window).height();
       
-      $('.section, .horizontal-scroll-section').css({'min-height': vph});
+      $('.section').css({'min-height': vph});
       $('.section').css({'width': vpw});
-      $('.horizontal-scroll-section').css({'width': 0.8 * vpw, 'min-height': 0.7 * vph});
+      //$('.horizontal-scroll-section').css({'width': 0.8 * vpw, 'min-height': 0.7 * vph});
     }
     </script>
   </head>
@@ -43,15 +45,21 @@
       <div class="banner maf-purple center">
         <h1>2014 annual report</h1>
         <h2>A year of leveling up</h2>
+        <div class="donate-btn">
+          <a class="button" href="http://lendingcircles.force.com/pmtx/dn8n__SiteDonation?id=a81i0000000PAsD">donate</a>
+        </div>
       </div>
   </div>
-  <div class="section who-we-are top maf-blue" id="section1">
-      <div class="who-we-are-mobile"></div>
-      <div class="banner left-banner maf-blue">
-        <h1>WHO WE ARE</h1>
-        <p> MAF is a nonprofit organization working to create a fair financial marketplace for hardworking families.</p><p>
-        We are helping financially excluded communities becoming visible, active, and successful participants in the U.S. financial mainstream.
-        </p><p>Our values are: Respect people for who they are, meet them where they are and build on what they have.</p>
+  <div class="maf-blue" id="section1">
+      <div class="looking-ahead-content">
+        <div class="banner left-align-text looking-ahead-content">
+          <h1>WHO WE ARE</h1>
+          <div class="description">
+            <p> MAF is a nonprofit organization working to create a fair financial marketplace for hardworking families.</p>
+            <p>We are helping financially excluded communities becoming visible, active, and successful participants in the U.S. financial mainstream.</p>
+            <p>Our values are: Respect people for who they are, meet them where they are and build on what they have.</p>
+          </div>
+        </div>
      </div>
   </div>
   <!-- Start letter section -->
@@ -76,7 +84,7 @@
             <p>Demand for credit building products is all over the country, so 
                we hit the road to 5 cities this year to recruit new partners. 
                This year, we’ve added 7 new organizations to our network of 
-               Lending Circles providers. These partnerships make it easier for 
+               Lending Circles providers. <a href="http://missionassetfund.org/training-success/" target="_blank">These partnerships</a> make it easier for 
                nonprofits to offer low-cost credit-building programs so their 
                clients get an effective, hands-on experience that transforms 
                their economic opportunity.</p>
@@ -97,7 +105,7 @@
           <img src="images/2014-highlights/launching-social-platform.png">
           <div class="text">
             <h2>Launching Our Social Loan Platform</h2>
-            <p>We developed a one-of-a-kind Social Loan platform that weaves 
+            <p>We developed a one-of-a-kind <a href="http://vimeo.com/109976858" target="_blank">Social Loan platform</a> that weaves 
                mobile‐friendly loan applications with automated credit 
                reporting, loan payment servicing, and Salesforce’s Communities. 
                This was a huge feat that will make it easier for us to manage 
@@ -112,8 +120,8 @@
           <div class="text">
             <h2>Getting A Fresh Design</h2>
             <p>A redesign of our website and logo have given us a new look. The 
-               newest version of our logo better reflects the work we do and the
-               variety of communities we serve. The new pages of our website are
+               newest version of our <a href="http://missionassetfund.org/logo-like-getting-new-uniform/" target="_blank">logo</a> better reflects the work we do and the
+               variety of communities we serve. The new pages of our <a href="http://missionassetfund.org/" target="_blank">website</a> are
                packed full of easy to read information that touch on all the 
                exciting work we have accomplished this year.</p>
           </div>
@@ -135,7 +143,7 @@
           <div class="text">
             <h2>Passing SB 896</h2>
             <p>In an effort to make large-scale change, MAF worked hard to 
-               create and pass SB 896 legislation that will enable more 
+               create and pass <a href="http://missionassetfund.org/sb-896-made-happen/" target="_blank">SB 896 legislation</a> that will enable more 
                nonprofits in California to facilitate credit-building loans. 
                When Governor Jerry Brown signed it into law in August 2014, MAF 
                celebrated an exciting chapter in our organization’s history and 
@@ -150,8 +158,8 @@
             <h2>Adding New Staff</h2>
             <p>We’ve added a few more awesome people to the team so we can better
              meet the needs of our growing members. Their diverse skill sets will
-              be sure to add even more dynamism to work we do. Welcome Aparna,
-               Carmen, Isis, Jennifer, Karla, Tori and Ximena to the family!</p>
+              be sure to add even more dynamism to work we do. Welcome <a href="http://missionassetfund.org/aparna-product-research-fellow/" target="_blank">Aparna</a>,
+               <a href="http://missionassetfund.org/welcome-carmen-chan-dream-sf-fellow/" target="_blank">Carmen</a>, <a href="http://missionassetfund.org/meet-isis-fleming-mafs-problem-solving-master/" target="_blank">Isis</a>, <a href="http://missionassetfund.org/meet-jennifer-tse/" target="blank">Jennifer</a>, <a href="http://missionassetfund.org/meet-karla-henriquez-bring-personal-professional-passion-programs-team/" target="_blank">Karla</a>, <a href="http://missionassetfund.org/tori-marketing-fellow/" target="_blank">Tori</a> and <a href="http://missionassetfund.org/welcome-ximena-financial-services-manager/" target="_blank">Ximena</a> to the family!</p>
           </div>
         </div>
         <div class="highlight">
@@ -159,16 +167,16 @@
           <div class="text">
             <h2>Earning Awards</h2>
             <p>We’re honored to have been recognized by three different organizations
-             this year for our work. As a finalist in the Google Impact Challenge and 
-             recipients of awards from the San Francisco Foundation and the SF LGBT
-              Center, we have a lot to celebrate and be thankful for. </p>
+             this year for our work. As a finalist in the <a href="http://missionassetfund.org/google-challenged/" target="_blank">Google Impact Challenge</a> and 
+             recipients of awards from the <a href="http://missionassetfund.org/new-mindset-john-r-may-community-leadership-award/" target="_blank">San Francisco Foundation</a> and the <a href="http://missionassetfund.org/financial-pride-lending-circles/" target="_blank">SF LGBT
+                           Center</a>, we have a lot to celebrate and be thankful for. </p>
           </div>
         </div>
         <div class="highlight">
           <img src="images/2014-highlights/making-the-media.jpg">
           <div class="text">
             <h2>Making The Media</h2>
-            <p>From the New York Times to the Guardian to Univision, we got some great
+            <p>From the <a href="http://www.nytimes.com/2014/10/11/your-money/raising-a-credit-score-from-zero-to-789-in-26-months.html?_r=3" target="_blank">New York Times</a> to the Guardian to <a href="http://video.univision.mobi/videos/video/2014-10-17/organice-sus-finanzas?id=531213" target="_blank">Univision</a>, we got some great
              media buzz this year (70 mentions!) on our programs and incredible members.
               Every story got us tons of calls, emails and walk-ins and our staff was so
                excited to see the overwhelming support and enthusiasm to join Lending
@@ -179,17 +187,21 @@
     </div>
     <!-- end highlights section -->
     <!-- success stories section -->
-    <div class="banner maf-purple"><h1>Our success stories</h1></div>
-    <div style="overflow-x: scroll; white-space: nowrap; width: auto;">
-      <div class="horizontal-scroll-section family-of-chefs content">
-          <div class="half-top-banner-table-left banner maf-grey">
+    <div class="banner maf-grey">
+      <div class="arrow-left" id="arrow-left"></div>
+      <div class="arrow-right" id="arrow-right"></div>
+      <h1>Our success stories</h1>
+    </div>
+    <div class="section" style="overflow-x: scroll; white-space: nowrap; width: auto;">
+      <div class="section horizontal-scroll-section family-of-chefs content">
+          <div class="half-top-banner-table-left banner maf-grey" id="first-slide">
             <h2>A family of chefs</h2>
             <div class="people-story">
             <p>Luis and Zenaida are the rockstar couple behind D’Maize Catering, bringing authentic Salvadoran dishes to Bay Area. They used Lending Circles to invest in their business and turn their part-time passion into a full-time job that can support their family.</p>
             <p><a href="http://missionassetfund.org/luis-zenaida-family-chefs/" target="_blank">Tell me more</a></p>
            </div>
           </div>
-      </div><div class="horizontal-scroll-section sunshine-to-the-community content">
+      </div><div class="section horizontal-scroll-section sunshine-to-the-community content">
           <div class="half-top-banner-table-left banner maf-grey">
           <h2>Bringing sunshine to the community</h2>
           <div class="people-story">
@@ -197,7 +209,7 @@
             <p><a href="http://missionassetfund.org/leonor-brings-sunshine-community/" target="_blank">Tell me more</a></p>
            </div>
           </div>
-      </div><div class="horizontal-scroll-section dreams-to-medical-school content">
+      </div><div class="section horizontal-scroll-section dreams-to-medical-school content">
         <div class="half-top-banner-table-left banner maf-grey"><h2>From dreams to medical school</h2>
         <div class="people-story">
             <p>New is a passionate public health advocate and the first undocumented student to enter UCSF Medical School. He used Lending Circles to build his credit and pay for his medical school applications fees.</p>
@@ -217,7 +229,7 @@
       <div class="two-col section">
         <div>
           <img src="images/growth-line-chart.png" style="width: 100%; max-width:600px; min-width:300px;">
-          <div class="financials-caption"><p>MAF was founded in 2007 as a startup nonprofit in the Mission District with initial funding of $1 million from the Levi Strauss Foundation.</p><p>We launched Lending Circles in 2008 and started replicating it across the Bay Area.</p><p>In 2012, we began to scale our work on a national level as part of our vision to reach communities all over the country.</p></div>
+          <div class="financials-caption"><h2>Our Growth</h2><p>MAF was founded in 2007 as a startup nonprofit in the Mission District with initial funding of $1 million from the Levi Strauss Foundation.</p><p>We launched Lending Circles in 2008 and started replicating it across the Bay Area.</p><p>In 2012, we began to scale our work on a national level as part of our vision to reach communities all over the country.</p></div>
         </div>
         <div>
           <img src="images/expenses-pie-chart.png" style="width: 100%; max-width:600px; min-width: 300px;">
@@ -225,7 +237,7 @@
         </div>
       </div>
     </div>
-  </div><!-- lookign ahead --><div class="section maf-grey">
+  </div><!-- looking ahead --><div class="section maf-grey">
     <div class="banner left-align-text looking-ahead-content">
       <h1 class="long-title">Looking ahead to 2015</h1>
       <h2>Expanding Reach</h2>
@@ -338,15 +350,51 @@
         </ul>
       </div>
    </div>
-      <div class="section thank-you"> 
+   <img src="images/maf-staff.jpg" width="100%" alt="Mission Asset Fund Staff">
+   <div class="banner thank-you-banner maf-green">
+     <h1>Thank You</h1>
+     <p>We wouldn't be hear without the generous support of our community.</p>
+     <p>Seeing the passion and excitement for our programs across the country has demonstrated that we are heading in the  right direction. We look forward to bringing Lending Circles to more communities nationwide.</p>
+     <p>The MAFistas.</p>
+     <div class="donate-btn">
+       <a class="button" href="http://lendingcircles.force.com/pmtx/dn8n__SiteDonation?id=a81i0000000PAsD">donate</a>
      </div>
-     <div class="banner thank-you-banner maf-green">
-          <h1>Thank You</h1>
-          <p>We wouldn't be hear without the generous support of our community.</p>
-          <p>Seeing the passion and excitement for our programs across the country has demonstrated that we are heading in the right direction. We look forward to bringing Lending Circles to more communities nationwide.</p>
-          <p>The MAFistas.</p>
-        </div>
- </div>
+   </div>
+  </div>
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="address-container">
+      <a class="logo" href="http://missionassetfund.org/" rel="home"></a>
+      <address>
+        <p style="text-align: center;"></p>
+        <p style="text-align: center;"></p>
+        <p style="text-align: center;"><span style="color: #808080;">(888)274-4808</span></p>
+        <p style="text-align: center;"><span style="color: #808080;">info@missionassetfund.org</span></p>
+        <p style="text-align: center;"><span style="color: #808080;">3269 Mission Street, San Francisco, California  94110</span></p>
+      </address>
+    </div>
+    <hr>
+    <div class="child-2" style="padding:26px 0px 38px 0px;">
+      Follow Us
+      <ul class="social-icons">
+        <li><a href="https://twitter.com/MAFpajarito" class="social-twitter-sm social-twitter"></a></li>
+        <li><a href="https://www.youtube.com/user/MissionAssetFund" class="social-youtube-sm social-youtube"></a></li>
+        <li><a href="https://www.linkedin.com/company/mission-asset-fund" class="social-in-sm social-in"></a></li>
+        <li><a href="https://www.facebook.com/missionassetfund.org" class="social-facebook-sm social-facebook"></a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="menu-footer-menu-container">
+      <ul id="menu-footer-menu" class="menu">
+        <li id="menu-item-2973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2973"><a href="http://lendingcircles.org/">Join our Programs</a></li>
+        <li id="menu-item-2972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2972"><a href="http://lendingcircles.org/partners.html">Become a Lending Circles Provider</a></li>
+        <li id="menu-item-1731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1731"><a href="http://missionassetfund.org/terms-of-use/">Terms of Use</a></li>
+        <li id="menu-item-1730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1730"><a href="http://missionassetfund.org/privacy-policy/">Privacy Policy</a></li>
+        <li id="menu-item-1745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1745"><a href="http://missionassetfund.org/press/">Press</a></li>
+        <li id="menu-item-1746" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1746"><a href="http://missionassetfund.org/contact-us/">Contact Us</a></li>
+      </ul>
+    </div>
+    <small>Copyright © 2014 Mission Asset Fund. All Rights Reserved.</small>
+  </footer>
 </div>
 </body>
 </html>

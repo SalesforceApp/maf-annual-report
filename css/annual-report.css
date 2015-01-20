@@ -173,7 +173,7 @@ iframe {
 /* Centered texts in each section
 * --------------------------------------- */
 .section {
-  background-size: auto 100%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -203,6 +203,15 @@ h1 {
   padding: 15px;
 }
 
+.donate-btn {
+  margin: 32px 0 16px 0;
+}
+
+.donate-btn > a {
+  border-color: #fff;
+  text-decoration: none;
+}
+
 .para-container {
   background-color: rgba(255,255,255,0.7);
   margin: 0 auto;
@@ -218,6 +227,11 @@ h1 {
 .banner.looking-ahead-content p {
   font-size: 20px;
   text-align: justify;
+}
+
+.banner.looking-ahead-content > .description {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .left-align-para-container.para-container {
@@ -254,8 +268,17 @@ h1 {
 
 /* Highlights */
 .highlights-row {
-  margin-top: 70px;
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display:         flex;
+  -webkit-flex-wrap: wrap;
+     -moz-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+     -moz-justify-content: center;
+          justify-content: center;
   position: relative;
+  margin-top: 24px;
   width: 100%;
 }
 
@@ -263,10 +286,15 @@ h1 {
   background: #fff;
   border-radius: 2px;
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 24px;
   overflow: hidden;
   vertical-align: top;
   width: 28%;
+}
+
+/* Keep each row centered. */
+.highlight:last-child {
+  margin-right: 0;
 }
 
 .highlight > .text {
@@ -329,10 +357,6 @@ h1 {
     width: inherit;
     height: 150px;
   }
-}
-
-.thank-you {
-  background-image:url(../images/maf-staff.jpg);
 }
 
 .letter-section {
@@ -439,4 +463,38 @@ h2.special-thanks {
   font-size: 16px;
   margin-bottom: 5px;
   line-height: initial;
+}
+
+.arrow-right {
+  cursor: pointer;
+  display: inline-block;
+  width: 0; 
+  height: 0; 
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid white;
+  position: absolute;
+  right: 10px;
+}
+
+.arrow-left {
+  cursor: pointer;
+  display: inline-block;
+  width: 0; 
+  height: 0; 
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent; 
+  border-right: 40px solid white; 
+  position: absolute;
+  left: 10px;
+}
+
+.address-container > address {
+  float: none;
+  margin: 12px 0 0 0;
+}
+
+.address-container > .logo {
+  float: none;
+  margin: 0 auto;
 }
