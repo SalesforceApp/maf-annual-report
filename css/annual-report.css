@@ -354,10 +354,6 @@ h1 {
   }
 }
 
-.thank-you {
-  background-image:url(../images/maf-staff.jpg);
-}
-
 .letter-section {
   background-image: url(../images/jose-portrait.jpg);
   background-size: cover;
@@ -497,4 +493,3 @@ h2.special-thanks {
   float: none;
   margin: 0 auto;
 }
-
