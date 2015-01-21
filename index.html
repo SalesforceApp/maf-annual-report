@@ -11,33 +11,13 @@
     <link rel='stylesheet' id='maf-style-css'  href='./css/maf-app.css' type='text/css' media='all' />
     <link rel='stylesheet' href='./css/annual-report.css' type='text/css' media='all' />
     <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <script type"text/javascript" src="./js/slick.min.js"></script>
     <!--[if IE]>
       <script type="text/javascript">
          var console = { log: function() {} };
       </script>
     <![endif]-->
-
-    <script>
-    $(document).ready(function(){
-      resizeDiv();
-      $('#arrow-left').click(function(){/*Do stuff*/});
-      $('#arrow-right').click(function(){/*Do stuff*/});
-    });
-
-    window.onresize = function(event) {
-     resizeDiv();
-    }
-
-    function resizeDiv() {
-      vpw = $(window).width();
-      vph = $(window).height();
-      
-      $('.section').css({'min-height': vph});
-      $('.section').css({'width': vpw});
-      //$('.horizontal-scroll-section').css({'width': 0.8 * vpw, 'min-height': 0.7 * vph});
-    }
-    </script>
   </head>
 <body> 
   <div class="section cover-page active center" id="section0">
@@ -187,37 +167,31 @@
     </div>
     <!-- end highlights section -->
     <!-- success stories section -->
-    <div class="banner maf-grey">
-      <div class="arrow-left" id="arrow-left"></div>
-      <div class="arrow-right" id="arrow-right"></div>
+    <div class="banner center maf-yellow">
       <h1>Our success stories</h1>
-    </div>
-    <div class="section" style="overflow-x: scroll; white-space: nowrap; width: auto;">
-      <div class="section horizontal-scroll-section family-of-chefs content">
-          <div class="half-top-banner-table-left banner maf-grey" id="first-slide">
-            <h2>A family of chefs</h2>
-            <div class="people-story">
-            <p>Luis and Zenaida are the rockstar couple behind D’Maize Catering, bringing authentic Salvadoran dishes to Bay Area. They used Lending Circles to invest in their business and turn their part-time passion into a full-time job that can support their family.</p>
-            <p><a href="http://missionassetfund.org/luis-zenaida-family-chefs/" target="_blank">Tell me more</a></p>
-           </div>
+      <div class="slider-nav" style="width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto;">
+          <div>
+            <h2>A Family Of Chefs</h2>
+            <p>
+            Luis and Zenaida are the rockstar couple behind D’Maize Catering, bringing authentic Salvadoran dishes to Bay Area. They used Lending Circles to invest in their business and turn their part-time passion into a full-time job that can support their family.</p>
+            <img src="./images/stories/family-of-chefs.jpg" style="width: 100%; max-width: 1200px;">
           </div>
-      </div><div class="section horizontal-scroll-section sunshine-to-the-community content">
-          <div class="half-top-banner-table-left banner maf-grey">
-          <h2>Bringing sunshine to the community</h2>
-          <div class="people-story">
-            <p>Leonor had years of business experience before coming to the US, but not having credit blocked her from being able to launch her new idea. Now, she’s promoting healthy living and entrepreneurship with her natural health business.</p>
-            <p><a href="http://missionassetfund.org/leonor-brings-sunshine-community/" target="_blank">Tell me more</a></p>
-           </div>
+          <div>
+            <h2>Bringing Sunshine To The Community</h2>
+            <p>Leonor had years of business experience before coming to the US, but not having credit blocked her from being able to launch her new idea. Now, she’s promoting healthy living and entrepreneurship with her natural health business.
+            </p>
+            <img src="./images/stories/sunshine-to-the-community.jpg" style="width: 100%; max-width: 1200px;">
           </div>
-      </div><div class="section horizontal-scroll-section dreams-to-medical-school content">
-        <div class="half-top-banner-table-left banner maf-grey"><h2>From dreams to medical school</h2>
-        <div class="people-story">
-            <p>New is a passionate public health advocate and the first undocumented student to enter UCSF Medical School. He used Lending Circles to build his credit and pay for his medical school applications fees.</p>
-            <p><a href="http://missionassetfund.org/new-latthivongskorn-dreams-medical-school/" target="_blank">Tell me more</a></p>
-           </div>
-        </div>
+          <div>
+            <h2>From Dreams To Medical School</h2>
+            <p>New is a passionate public health advocate and the first undocumented student to enter UCSF Medical School. He used Lending Circles to build his credit and pay for his medical school applications fees.
+            </p>
+            <img src="./images/stories/dreams-to-medical-school.jpg" style="width: 100%; max-width: 1200px;">
+          </div>
       </div>
-    </div><div class="section maf-blue">
+    </div>
+
+    <div class="section maf-blue">
     <!-- end success stories -->
     
       <div class="banner">
@@ -397,4 +371,32 @@
   </footer>
 </div>
 </body>
+    <script>
+$(document).ready(function(){
+  resizeDiv();
+$('.slider-nav').slick({
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    centerMode: false,
+    focusOnSelect: true
+});
+});
+
+    window.onresize = function(event) {
+     resizeDiv();
+    }
+
+    function resizeDiv() {
+      vpw = $(window).width();
+      vph = $(window).height();
+      
+      $('.section').css({'min-height': vph});
+      $('.section').css({'width': vpw});
+      //$('.horizontal-scroll-section').css({'width': 0.8 * vpw, 'min-height': 0.7 * vph});
+    }
+    </script>
 </html>
