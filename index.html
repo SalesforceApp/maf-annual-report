@@ -167,26 +167,27 @@
     </div>
     <!-- end highlights section -->
     <!-- success stories section -->
-    <div class="banner center maf-yellow">
+    <div class="banner center maf-green">
       <h1>Our success stories</h1>
-      <div class="slider-nav" style="width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto;">
+      <div class="slider-nav white" style="width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto;">
           <div>
             <h2>A Family Of Chefs</h2>
             <p>
             Luis and Zenaida are the rockstar couple behind D’Maize Catering, bringing authentic Salvadoran dishes to Bay Area. They used Lending Circles to invest in their business and turn their part-time passion into a full-time job that can support their family.</p>
-            <img src="./images/stories/family-of-chefs.jpg" style="width: 100%; max-width: 1200px;">
+            <div class="family-of-chefs content" style="height: 500px;">
+            </div>
           </div>
           <div>
             <h2>Bringing Sunshine To The Community</h2>
             <p>Leonor had years of business experience before coming to the US, but not having credit blocked her from being able to launch her new idea. Now, she’s promoting healthy living and entrepreneurship with her natural health business.
             </p>
-            <img src="./images/stories/sunshine-to-the-community.jpg" style="width: 100%; max-width: 1200px;">
+            <div class="sunshine-to-the-community content" style="height: 500px;"></div>
           </div>
           <div>
             <h2>From Dreams To Medical School</h2>
             <p>New is a passionate public health advocate and the first undocumented student to enter UCSF Medical School. He used Lending Circles to build his credit and pay for his medical school applications fees.
             </p>
-            <img src="./images/stories/dreams-to-medical-school.jpg" style="width: 100%; max-width: 1200px;">
+            <div class="dreams-to-medical-school content" style="height: 500px;"></div>
           </div>
       </div>
     </div>
@@ -375,7 +376,7 @@
 $(document).ready(function(){
   resizeDiv();
 $('.slider-nav').slick({
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     autoplay: true,
     autoplaySpeed: 2000,
     slidesToShow: 1,
