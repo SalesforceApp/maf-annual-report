@@ -254,6 +254,14 @@ h1 {
   margin: 0 auto;
 }
 
+.looking-ahead-content > .description > .values {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: center;
+}
+
 .left-align-para-container.para-container {
   margin: auto auto auto auto;
 }
