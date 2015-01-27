@@ -157,7 +157,7 @@ h2 {
 }
 
 .banner a {
-  color: white;
+  color: rgb(66, 84, 106);
   text-decoration: underline;
 }
 
@@ -252,6 +252,14 @@ h1 {
 .banner.looking-ahead-content > .description {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.looking-ahead-content > .description > .values {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: center;
 }
 
 .left-align-para-container.para-container {
