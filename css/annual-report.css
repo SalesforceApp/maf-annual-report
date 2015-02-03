@@ -426,7 +426,7 @@ h1 {
 
 .dreams-to-medical-school {
   background-image: url(../images/stories/dreams-to-medical-school.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat:no-repeat;
   background-position: center center;
 }
