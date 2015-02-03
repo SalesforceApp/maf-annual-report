@@ -533,3 +533,11 @@ h2.special-thanks {
   float: none;
   margin: 0 auto;
 }
+
+.looking-ahead-icon {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
