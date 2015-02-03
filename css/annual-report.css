@@ -230,6 +230,7 @@ h1 {
 .donate-btn > a {
   border-color: #fff;
   text-decoration: none;
+  color: white;
 }
 
 .para-container {
@@ -531,4 +532,12 @@ h2.special-thanks {
 .address-container > .logo {
   float: none;
   margin: 0 auto;
+}
+
+.looking-ahead-icon {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-bottom: 5px;
 }
